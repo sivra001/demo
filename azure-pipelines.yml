@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-- stage: Build Application
+- stage: Build_Application
   jobs:
     - job: Started building application
       steps:
