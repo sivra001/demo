@@ -11,8 +11,11 @@ pool:
 
 stages:
 - stage: Build Application
-  displayName: 'Build Application'
-  # Build project
-  - task: DotNetCoreCLI@2
-    inputs:
-      command: 'build'
+  jobs:
+    - job: Started building application
+      steps:
+        - bash: dotNet application
+        # Build project
+        - task: DotNetCoreCLI@2
+          inputs:
+            command: 'build'
