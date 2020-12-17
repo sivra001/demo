@@ -12,9 +12,8 @@ pool:
 stages:
 - stage: Build_Application
   jobs:
-    - job: Started building application
+    - job: Started_building_application
       steps:
-        - bash: dotNet application
         # Build project
         - task: DotNetCoreCLI@2
           inputs:
