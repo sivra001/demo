@@ -12,7 +12,6 @@ pool:
 stages:
 - stage: Build Application
   displayName: 'Build Application'
-  steps: 
   # Build project
   - task: DotNetCoreCLI@2
     inputs:
